@@ -1,13 +1,15 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 
-class Main extends Component {
-  render() {
-    return (
-      <Fragment>
-        <h1>Main</h1>
-      </Fragment>
-    );
-  }
-}
+import LeftBar from '../../components/LeftBar';
+import AddUser from '../../components/AddUser';
+import Map from '../../components/Map';
+
+const Main = () => (
+  <Fragment>
+    <Map />
+    <LeftBar />
+    <AddUser />
+  </Fragment>
+);
 
 export default Main;
